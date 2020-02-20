@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+.main-contain
+{
+  height: auto;
+  width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-areas:
+  "help"
+  "logo"
+  "nav"
+  "jumbotron"
+  "trendsection"
+  "popularsection"
+}
+
+.help
+{
+  background-color:rgba(226, 226, 226, 0.51);
+  grid-area:help;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+
+.help-span
+{
+  cursor: pointer;
+  padding:.2vw 2.5vw;
+  font-size: .8rem;
+}
+.help-span:hover
+{
+  color:rgb(61, 197, 255);
+  text-shadow: 1px 2px white;
+}
+.logo
+{
+  grid-area:logo;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-content: center;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.4);
+  align-items: center;
+}
+.logo-div
+{
+  padding:.3vw 2.5vw;
+}
+.logo-div img
+{
+  width: 15vw;
+  cursor: pointer;
+}
+.logo-header
+{
+  padding:.5vw 2.5vw;
+  margin-left: auto;
+}
+.logo-header ul li
+{
+  display: inline-block;
+  padding: 0vw .6vw;
+  border-right: 1px solid rgba(185, 185, 185, 0.3);
+  cursor: pointer;
+}
+.logo-header ul li:hover
+{
+  color:rgb(61, 197, 255);
+}
+.logo-header ul li:nth-child(4)
+{
+  background-color: rgb(61, 197, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: .4vw .4vw;
+}
+.nav
+{
+  grid-area:nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav ul li
+{
+  display: inline-block;
+  padding: .5vw 1vw;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+.nav ul li:hover
+{
+  color: rgb(61, 197, 255);
+  border-bottom: 1px solid rgb(61, 197, 255);
+}
+.jumbotron
+{
+  grid-area: jumbotron;
+  display: flex;
+  justify-content: center;
+  background-image: url(j-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron ul
+{
+  padding: 1vw 0vw;
+}
+.jumbotron ul li
+{
+  list-style-type: none;
+}
+.jumbotron > ul > li:nth-child(1)
+{
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding-top: 4vw;
+  text-align: center;
+}
+.jumbotron > ul > li:nth-child(3)
+{
+  color: white;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-bottom: 2vw;
+  padding-left: 1vw;
+}
+.jumbo-search li
+{
+  display: inline-block;
+  padding: 0px 1vw;
+}
+.jumbo-search > li
+{
+  color:yellow;
+}
+.jumbo-search li input,.jumbo-search li select
+{
+  height: 4vw;
+  font-size:1.4rem;
+  font-weight: lighter;
+  border-radius: 10px;
+  border: 2px solid rgb(140, 140, 140);
+}
+.jumbo-search li:nth-child(2)
+{
+  font-size: 40px;
+}
+.jumbo-search li:nth-child(3)
+{
+  color:rgb(58, 185, 240);
+  background-color: white;
+  font-size: 50px;
+  border-radius: 12px;
+}
+.trend-section
+{
+  grid-area: trendsection;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.trend-section-title
+{
+  font-size: 1.8rem;
+  margin-top: 1vw;
+}
+.trend-items
+{
+  padding: .5vw 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.trend-item-card
+{
+  height: 40%;
+  width: 40%;
+  border: 1px solid rgb(200, 204, 195,0.4);
+  margin: 0vw .5vw;
+}
+.trend-item-card img
+{
+  height: 100%;
+  width: 100%;
+}
+.trend-item-card p
+{
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: .3vw .5vw;
+  text-transform: capitalize;
+}
+.trend-item-card span
+{
+  font-weight: lighter;
+  padding: 0 .5vw;
+}
+
+.popular-section
+{
+  grid-area: popularsection;
+}
+.popular-section-title
+{
+  font-size: 1.8rem;
+  margin-top: 1vw;
+}
+.p-item-card
+{
+  padding: 1vw 0vw;
+}
+.p-item-card > p
+{
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding:.5vw 0vw;
+}
+.p-list
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-list p
+{
+  margin: .3vw .5vw;
+  border: 1px solid rgb(135, 135, 135,0.7);
+  border-radius: 13px;
+  padding: .2vw .4vw;
+}
+.popular-items
+{
+  display: flex;
+  justify-content:space-between;
+}
+footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 99vw;
+  background-color:#eee;
+}
+footer ul :nth-child(1)
+{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer ul
+{
+  margin-top: 2vw;
+  list-style-type: none;
+}
+
+footer ul li
+{
+  padding: .2vw 0vw;
+  font-size: .9rem;
+}
+.copy
+{
+  background-color: #eee;
+  width: 100%;
+  text-align: center;
+}
