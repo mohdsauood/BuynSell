@@ -100,6 +100,7 @@
   font-weight: bolder;
   text-transform: capitalize;
   color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 .nav ul li:hover
 {
@@ -144,6 +145,7 @@
 {
   display: inline-block;
   padding: 0px 1vw;
+  cursor: pointer;
 }
 .jumbo-search > li
 {
@@ -193,6 +195,7 @@
   width: 40%;
   border: 1px solid rgb(200, 204, 195,0.4);
   margin: 0vw .5vw;
+  cursor: pointer;
 }
 .trend-item-card img
 {
@@ -224,6 +227,7 @@
 .p-item-card
 {
   padding: 1vw 0vw;
+  cursor: pointer;
 }
 .p-item-card > p
 {
@@ -267,6 +271,7 @@ footer ul
 {
   margin-top: 2vw;
   list-style-type: none;
+  cursor: pointer;
 }
 
 footer ul li
