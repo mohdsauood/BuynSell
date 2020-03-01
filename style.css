@@ -375,6 +375,7 @@ footer ul li
     justify-content: flex-end;
     flex-grow: 2;
     width: 90vw;
+    margin-bottom: 2vw;
   }
 
   .help-span
@@ -398,6 +399,7 @@ footer ul li
     border-bottom: 1px solid rgba(185, 185, 185, 0.4);
     align-items: center;
     width:90vw;
+    margin-bottom: 1vh;
   }
   .logo-div
   {
@@ -418,7 +420,7 @@ footer ul li
   {
     display: inline-block;
     padding: 0vw .6vw;
-    border-right: 1px solid rgba(185, 185, 185, 0.3);
+    border-right: 1px solid rgba(185, 185, 185, 0.7);
     cursor: pointer;
   }
   .logo-header ul li:hover
@@ -439,6 +441,7 @@ footer ul li
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 1vh;
   }
   .nav ul li
   {
@@ -466,12 +469,14 @@ footer ul li
   }
   .jumbotron
   {
+    width: 90vw;
     grid-area: jumbotron;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     background-image: url(j-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 2vh;
   }
 
   .jumbotron ul
@@ -486,7 +491,7 @@ footer ul li
   {
     color: white;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     padding-top: 4vw;
     text-align: center;
   }
@@ -494,7 +499,7 @@ footer ul li
   {
     color: white;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding-bottom: 2vw;
     padding-left: 1vw;
   }
@@ -510,8 +515,8 @@ footer ul li
   }
   .jumbo-search li input,.jumbo-search li select
   {
-    height: 4vw;
-    font-size:1.4rem;
+    height: 8vw;
+    font-size:1.1rem;
     font-weight: lighter;
     border-radius: 10px;
     border: 2px solid rgb(140, 140, 140);
@@ -524,7 +529,7 @@ footer ul li
   {
     color:rgb(58, 185, 240);
     background-color: white;
-    font-size: 50px;
+    font-size: 20px;
     border-radius: 12px;
   }
   .trend-section
@@ -533,17 +538,19 @@ footer ul li
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2vh;
   }
   .trend-section-title
   {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 1vw;
   }
   .trend-items
   {
     padding: .5vw 0px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content:space-between;
   }
   .trend-item-card
@@ -551,7 +558,7 @@ footer ul li
     height: 40%;
     width: 40%;
     border: 1px solid rgb(200, 204, 195,0.4);
-    margin: 0vw .5vw;
+    margin: 1vw .5vw;
     cursor: pointer;
   }
   .trend-item-card img
@@ -575,10 +582,11 @@ footer ul li
   .popular-section
   {
     grid-area: popularsection;
+    margin-bottom: 6vh;
   }
   .popular-section-title
   {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 1vw;
   }
   .p-item-card
