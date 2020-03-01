@@ -2,10 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7cf0ce6bd0.js" crossorigin="anonymous"></script>
+
     <title>Buy&Sell</title>
   </head>
   <body>
@@ -25,7 +27,8 @@
         </div>
       </div>
       <div class="nav">
-        <ul>
+        <i class="fas fa-bars"></i>
+        <ul class="disappear">
           <li class="hvr-float">motors</li>
           <li class="hvr-float">property for sale</li>
           <li class="hvr-float">property new projects</li>
@@ -162,5 +165,14 @@ or find a job</li>
     <div class="copy">
       &copy; Buy&Sell 2020 , Mohamed sauood
     </div>
+    <script type="text/javascript">
+    let ultoggler=document.querySelector("body > div.main-contain > div.nav > ul");
+
+      document.querySelector(".nav > i").onclick=function(){
+        ultoggler.classList.toggle('appear');
+        }
+
+
+    </script>
   </body>
 </html>
