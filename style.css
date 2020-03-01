@@ -287,15 +287,21 @@ footer ul li
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-  .help
+  .main-contain
   {
-    background-color:rgba(226, 226, 226, 0.51);
-    grid-area:help;
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-end;
-    flex-grow: 2;
-    width:
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(20px,auto);
+    grid-template-areas:
+    "help"
+    "logo"
+    "nav"
+    "jumbotron"
+    "trendsection"
+    "popularsection"
   }
 }
 
@@ -319,7 +325,7 @@ footer ul li
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-  
+
 }
 
 @media all and (max-width: 480px) { }
