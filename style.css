@@ -325,7 +325,39 @@ footer ul li
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-
+  .main-contain
+  {
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(20px,auto);
+    grid-template-areas:
+    "help"
+    "logo"
+    "nav"
+    "jumbotron"
+    "trendsection"
+    "popularsection"
+  }
 }
 
-@media all and (max-width: 480px) { }
+@media all and (max-width: 480px) {
+  .main-contain
+  {
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(20px,auto);
+    grid-template-areas:
+    "help"
+    "logo"
+    "nav"
+    "jumbotron"
+    "trendsection"
+    "popularsection"
+  }
+}
